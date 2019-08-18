@@ -1,0 +1,52 @@
+-------------------------HASP_SAMD_SENSOR (Prorgamming Port)
+# ---------------------------------------
+
+HASP_SAMD_SENSOR.name=Arduino/Genuino Zero (Programming Port)
+
+HASP_SAMD_SENSOR.vid.0=0x03eb
+
+HASP_SAMD_SENSOR.pid.0=0x2157
+
+
+HASP_SAMD_SENSOR.upload.tool=openocd
+
+HASP_SAMD_SENSOR.upload.protocol=sam-ba
+
+HASP_SAMD_SENSOR.upload.maximum_size=262144
+
+HASP_SAMD_SENSOR.upload.use_1200bps_touch=false
+
+HASP_SAMD_SENSOR.upload.wait_for_upload_port=false
+
+HASP_SAMD_SENSOR.upload.native_usb=false
+
+HASP_SAMD_SENSOR.build.mcu=cortex-m0plus
+
+HASP_SAMD_SENSOR.build.f_cpu=48000000L
+
+HASP_SAMD_SENSOR.build.usb_product="HASP_SAMD_SENSOR"
+
+HASP_SAMD_SENSOR.build.usb_manufacturer="College of the Canyons, Aerospace and Science Team"
+
+HASP_SAMD_SENSOR.build.board=SAMD_ZERO
+
+HASP_SAMD_SENSOR.build.core=arduino
+
+HASP_SAMD_SENSOR.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+
+HASP_SAMD_SENSOR.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+
+HASP_SAMD_SENSOR.build.openocdscript=openocd_scripts/arduino_zero.cfg
+
+HASP_SAMD_SENSOR.build.variant=HASP_SAMD_SENSOR
+HASP_SAMD_SENSOR.build.variant_system_lib=
+arduino_zero_edbg.build.vid=0x2341
+
+HASP_SAMD_SENSOR.build.pid=0x804d
+
+HASP_SAMD_SENSOR.bootloader.tool=openocd
+
+HASP_SAMD_SENSOR.bootloader.file=zero/samd21_sam_ba.bin
+
+# Arduino/Genuino Zero (Native USB Port)
+# 
