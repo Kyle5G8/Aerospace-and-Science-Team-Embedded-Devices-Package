@@ -1,0 +1,2 @@
+name=HASP_SAMD_SENSOR
+version=1.0.0
